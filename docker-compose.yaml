@@ -9,7 +9,11 @@ services:
         volumes:
             - ./data:/app/data
         environment:
-            - OPENROUTER_API_KEY=
+            - DISCORD_APPLICATION_ID=
+            - DISCORD_API_TOKEN=
+            - X_SERVER_URL=
+            - XAI_API_KEY=
+            - XAI_MODEL=
             - ELEVENLABS_XI_API_KEY=
             - ELEVENLABS_MODEL_ID=eleven_multilingual_v2
             - ELEVENLABS_VOICE_ID=21m00Tcm4TlvDq8ikWAM
@@ -24,6 +28,10 @@ services:
             - SOLANA_RPC_URL=https://api.mainnet-beta.solana.com
             - HELIUS_API_KEY=
             - SERVER_PORT=3000
+            - HEDERA_PRIVATE_KEY=
+            - HEDERA_ACCOUNT_ID=
+            - HEDERA_NETWORK_TYPE=
+            - HEDERA_KEY_TYPE=
         ports:
             - "3000:3000"
         restart: always

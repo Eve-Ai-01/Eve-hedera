@@ -7,7 +7,7 @@ Open `src/character.ts` to modify the default character. Uncomment and edit.
 ### Custom characters
 
 To load custom characters instead:
-- Use `pnpm start --characters="path/to/your/character.json"`
+- Use `pnpm start --characters="characters/eve.character.json"'
 - Multiple character files can be loaded simultaneously
 
 ### Add clients

@@ -9,6 +9,7 @@ import {
 import { bootstrapPlugin } from "@elizaos/plugin-bootstrap";
 import { createNodePlugin } from "@elizaos/plugin-node";
 import { solanaPlugin } from "@elizaos/plugin-solana";
+import { hederaPlugin } from "../plugin-hedera/dist/index.js";
 import fs from "fs";
 import net from "net";
 import path from "path";
@@ -59,6 +60,7 @@ export function createAgent(
       bootstrapPlugin,
       nodePlugin,
       character.settings?.secrets?.WALLET_PUBLIC_KEY ? solanaPlugin : null,
+      hederaPlugin,
     ].filter(Boolean),
     providers: [],
     actions: [],
